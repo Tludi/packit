@@ -12,6 +12,8 @@ import RealmSwift
 class ActiveTripsListController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
+    
+    
     @IBOutlet weak var tripsTable: UITableView!
     
     
@@ -19,6 +21,9 @@ class ActiveTripsListController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         print("got to the first controller, yay!")
         // Do any additional setup after loading the view.
+        
+        let tripCell = UINib(nibName: "TripCell", bundle: nil)
+        self.tripsTable.register(tripCell, forCellReuseIdentifier: "tripCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,8 +44,15 @@ class ActiveTripsListController: UIViewController, UITableViewDelegate, UITableV
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath)
-        cell.textLabel?.text = "Hello"
+        
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath) as! TripCell
+        
+        
+        //variables for this cell are in the TripCell Nib //
+        cell.tripName.text = "Hello from custom cell"
+        
         
         return cell
     }
