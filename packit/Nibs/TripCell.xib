@@ -18,17 +18,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tripName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYf-es-WH8">
-                        <rect key="frame" x="152" y="23" width="71" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34m-qi-eBN">
+                        <rect key="frame" x="16" y="11" width="343" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tripName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYf-es-WH8">
+                                <rect key="frame" x="136" y="29.5" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.015686274510000001" green="0.41176470590000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GYf-es-WH8" firstAttribute="top" secondItem="34m-qi-eBN" secondAttribute="top" constant="29.5" id="1H9-v8-OHn"/>
+                            <constraint firstAttribute="bottom" secondItem="GYf-es-WH8" secondAttribute="bottom" constant="29.5" id="Acn-Sg-mpU"/>
+                            <constraint firstItem="GYf-es-WH8" firstAttribute="centerX" secondItem="34m-qi-eBN" secondAttribute="centerX" id="W68-wt-rHt"/>
+                            <constraint firstItem="GYf-es-WH8" firstAttribute="centerY" secondItem="34m-qi-eBN" secondAttribute="centerY" id="ofS-ma-2Ht"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="GYf-es-WH8" secondAttribute="bottom" constant="47" id="3Wu-LR-kjd"/>
-                    <constraint firstItem="GYf-es-WH8" firstAttribute="top" secondItem="6z7-0j-4bs" secondAttribute="topMargin" constant="12" id="MAf-br-A3Q"/>
-                    <constraint firstItem="GYf-es-WH8" firstAttribute="centerX" secondItem="6z7-0j-4bs" secondAttribute="centerX" id="a6V-UZ-AB4"/>
+                    <constraint firstItem="34m-qi-eBN" firstAttribute="top" secondItem="6z7-0j-4bs" secondAttribute="topMargin" id="SXC-TM-8AN"/>
+                    <constraint firstItem="34m-qi-eBN" firstAttribute="bottom" secondItem="6z7-0j-4bs" secondAttribute="bottomMargin" id="e5O-Y2-2SR"/>
+                    <constraint firstItem="34m-qi-eBN" firstAttribute="trailing" secondItem="6z7-0j-4bs" secondAttribute="trailingMargin" id="p7O-dr-vzh"/>
+                    <constraint firstItem="34m-qi-eBN" firstAttribute="leading" secondItem="6z7-0j-4bs" secondAttribute="leadingMargin" id="uJt-Aa-nje"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
