@@ -95,11 +95,11 @@
 		00FD4AC1224328A30085BC27 /* packit */ = {
 			isa = PBXGroup;
 			children = (
-				007D721D2245765F00286690 /* Nibs */,
-				00E700AA22454E55005B36F5 /* Models */,
-				00E700A922454E44005B36F5 /* Controllers */,
 				00FD4AC6224328A30085BC27 /* Main.storyboard */,
 				00FD4AC2224328A30085BC27 /* AppDelegate.swift */,
+				00E700AA22454E55005B36F5 /* Models */,
+				00E700A922454E44005B36F5 /* Controllers */,
+				007D721D2245765F00286690 /* Nibs */,
 				00FD4AD4224329570085BC27 /* Support Files */,
 			);
 			path = packit;

@@ -11,43 +11,54 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tripCell" rowHeight="102" id="vp1-Nq-cTO" customClass="TripCell" customModule="packit" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tripCell" rowHeight="165" id="vp1-Nq-cTO" customClass="TripCell" customModule="packit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vp1-Nq-cTO" id="6z7-0j-4bs">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34m-qi-eBN">
-                        <rect key="frame" x="16" y="11" width="343" height="80"/>
+                        <rect key="frame" x="22" y="22" width="330" height="120"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tripName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYf-es-WH8">
-                                <rect key="frame" x="136" y="29.5" width="71" height="21"/>
+                                <rect key="frame" x="139.5" y="-15" width="71" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="lCW-wm-KdG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tripBox" translatesAutoresizingMaskIntoConstraints="NO" id="3Wr-pl-FhX">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="120"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.015686274510000001" green="0.41176470590000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.019607843137254902" green="0.41568627450980394" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GYf-es-WH8" firstAttribute="top" secondItem="34m-qi-eBN" secondAttribute="top" constant="29.5" id="1H9-v8-OHn"/>
-                            <constraint firstAttribute="bottom" secondItem="GYf-es-WH8" secondAttribute="bottom" constant="29.5" id="Acn-Sg-mpU"/>
-                            <constraint firstItem="GYf-es-WH8" firstAttribute="centerX" secondItem="34m-qi-eBN" secondAttribute="centerX" id="W68-wt-rHt"/>
-                            <constraint firstItem="GYf-es-WH8" firstAttribute="centerY" secondItem="34m-qi-eBN" secondAttribute="centerY" id="ofS-ma-2Ht"/>
+                            <constraint firstItem="3Wr-pl-FhX" firstAttribute="leading" secondItem="34m-qi-eBN" secondAttribute="leading" id="63J-Fv-FvG"/>
+                            <constraint firstAttribute="bottom" secondItem="3Wr-pl-FhX" secondAttribute="bottom" id="I3w-Fq-Rt0"/>
+                            <constraint firstItem="GYf-es-WH8" firstAttribute="centerX" secondItem="34m-qi-eBN" secondAttribute="centerX" constant="10" id="Pet-cE-PRR"/>
+                            <constraint firstAttribute="trailing" secondItem="3Wr-pl-FhX" secondAttribute="trailing" id="ZB5-9q-gWt"/>
+                            <constraint firstItem="GYf-es-WH8" firstAttribute="centerY" secondItem="34m-qi-eBN" secondAttribute="centerY" constant="-33" id="cf2-Fv-t3F"/>
+                            <constraint firstItem="3Wr-pl-FhX" firstAttribute="top" secondItem="34m-qi-eBN" secondAttribute="top" id="oFX-Rc-WPT"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="34m-qi-eBN" firstAttribute="top" secondItem="6z7-0j-4bs" secondAttribute="topMargin" id="SXC-TM-8AN"/>
-                    <constraint firstItem="34m-qi-eBN" firstAttribute="bottom" secondItem="6z7-0j-4bs" secondAttribute="bottomMargin" id="e5O-Y2-2SR"/>
-                    <constraint firstItem="34m-qi-eBN" firstAttribute="trailing" secondItem="6z7-0j-4bs" secondAttribute="trailingMargin" id="p7O-dr-vzh"/>
-                    <constraint firstItem="34m-qi-eBN" firstAttribute="leading" secondItem="6z7-0j-4bs" secondAttribute="leadingMargin" id="uJt-Aa-nje"/>
+                    <constraint firstItem="34m-qi-eBN" firstAttribute="top" secondItem="6z7-0j-4bs" secondAttribute="topMargin" constant="11" id="SXC-TM-8AN"/>
+                    <constraint firstItem="34m-qi-eBN" firstAttribute="bottom" secondItem="6z7-0j-4bs" secondAttribute="bottomMargin" constant="-12" id="e5O-Y2-2SR"/>
+                    <constraint firstItem="34m-qi-eBN" firstAttribute="trailing" secondItem="6z7-0j-4bs" secondAttribute="trailingMargin" constant="-7" id="p7O-dr-vzh"/>
+                    <constraint firstItem="34m-qi-eBN" firstAttribute="leading" secondItem="6z7-0j-4bs" secondAttribute="leadingMargin" constant="6" id="uJt-Aa-nje"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="tripName" destination="GYf-es-WH8" id="MCg-Wt-DdT"/>
             </connections>
-            <point key="canvasLocation" x="128.80000000000001" y="171.81409295352324"/>
+            <point key="canvasLocation" x="128.80000000000001" y="200.14992503748127"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="tripBox" width="644" height="204"/>
+    </resources>
 </document>
